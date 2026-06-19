@@ -594,6 +594,35 @@ body {
   font-weight: 600;
 }
 
+/* ── BLOG SECTION ── */
+#blog-section {
+  position: relative;
+  z-index: 1;
+  max-width: 800px;
+  margin: 4rem auto;
+  padding: 0 1.5rem;
+}
+.blog-post {
+  background: rgba(255,255,255,0.02);
+  border: 1px solid rgba(255,255,255,0.05);
+  border-radius: 16px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  text-align: right;
+  backdrop-filter: blur(10px);
+}
+.blog-title {
+  font-size: 1.4rem;
+  color: var(--purple-light);
+  margin-bottom: 1rem;
+  font-weight: 800;
+}
+.blog-text {
+  font-size: 0.95rem;
+  line-height: 1.8;
+  color: rgba(255,255,255,0.6);
+}
+
 /* ── FOOTER ── */
 footer {
   position: relative;
@@ -644,7 +673,6 @@ footer span {
   <div class="loader-pct" id="loader-pct">0%</div>
 </div>
 
-<!-- ════════════════════ HERO ════════════════════ -->
 <!-- ════════════════════ UNLOCK SECTION ════════════════════ -->
 <section id="unlock-section">
   <div class="section-label">خطوات الحصول على الرابط</div>
@@ -657,7 +685,7 @@ footer span {
 
     <!-- Banner Image -->
     <img class="banner-img"
-         src="/mnt/user-data/uploads/1000029487.png"
+         src="images/1000029487.png"
          onerror="this.src='https://images.unsplash.com/photo-1614294148960-9aa740632a87?w=900'"
          alt="Delta Hack Banner">
 
@@ -726,6 +754,26 @@ footer span {
       🔓 تحميل الهاك الآن — مجاناً!
     </button>
 
+  </div>
+</section>
+
+<!-- ════════════════════ BLOG SECTION ════════════════════ -->
+<section id="blog-section">
+  <div class="section-label">مقالات تقنية</div>
+  <h2 class="section-title">آخر الأخبار التقنية</h2>
+
+  <div class="blog-post">
+    <h3 class="blog-title">مستقبل الألعاب الإلكترونية وتطور الذكاء الاصطناعي</h3>
+    <p class="blog-text">
+      يشهد عالم الألعاب الإلكترونية تطوراً ملحوظاً في السنوات الأخيرة بفضل تقنيات الذكاء الاصطناعي. لم تعد الألعاب مقتصرة على الترفيه البسيط، بل أصبحت تعتمد على خوارزميات معقدة لتحليل سلوك اللاعبين وتقديم تجربة مخصصة لكل مستخدم. هذا التطور ساعد في تحسين جودة الرسوميات وجعل البيئات الافتراضية أكثر واقعية من أي وقت مضى. ومن المتوقع أن تستمر هذه التقنيات في التطور لتفتح آفاقاً جديدة للمطورين واللاعبين على حد سواء، مما يخلق مستويات غير مسبوقة من التفاعل داخل العوالم الافتراضية.
+    </p>
+  </div>
+
+  <div class="blog-post">
+    <h3 class="blog-title">كيف تحمي بياناتك وهاتفك الذكي من الاختراقات الأمنية؟</h3>
+    <p class="blog-text">
+      مع تزايد الاعتماد على الهواتف الذكية في إدارة حياتنا اليومية وتخزين بياناتنا المهمة، أصبحت حماية المعلومات الشخصية أمراً بالغ الأهمية. ينصح الخبراء بتحديث نظام التشغيل بشكل دوري لضمان سد الثغرات الأمنية المكتشفة، بالإضافة إلى تجنب تحميل التطبيقات من مصادر أو روابط غير موثوقة. يعتبر استخدام كلمات مرور قوية ومتنوعة وتفعيل المصادقة الثنائية (2FA) من أهم الخطوات الأساسية للحفاظ على خصوصيتك ومعلوماتك البنكية بأمان تام بعيداً عن أيدي المتطفلين.
+    </p>
   </div>
 </section>
 
@@ -940,3 +988,4 @@ window.addEventListener('scroll', () => {
 </script>
 </body>
 </html>
+
